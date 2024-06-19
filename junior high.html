@@ -4,18 +4,55 @@
 		<title>音标-语法-单词(4-6 2018Plan)</title>
 		<style>
 @media print {
+	@page {
+		size: B5;
+		margin: 6mm;
+	}
+	@page:left {
+		@top-left {content:"初中英语全册";}
+		@top-right {content:"2024/5";}
+		@bottom-left {
+				content: "Page " counter(page);
+			}
+		@bottom-right {
+				 content:"微信公众号：EnglishLeaner";
+			}
+		}
+	@page:right {
+		@top-left {content:"2024/5";}
+		@top-right {content:"初中英语全册";}
+		@bottom-left {
+				content:"微信公众号：EnglishLeaner";
+			}
+		@bottom-right {
+				 content: "Page " counter(page);
+			}
+		}
   body {
- -webkit-print-color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+  }
+  p{
+  	  margin-block-end: 10px;
+	  margin-block-start: 10px;
+  }
+  .pagedjs_margin-top, .pagedjs_margin-bottom {
+	font-size: 3mm;
+  }
+  h4{
+    margin-block-end: 13px;
+	margin-block-start: 13px;
   }
   h3 {
- display: block;
- page-break-before: always; /* 在元素之前进行分页 */
+	display: block;
+  	margin-block-end: 13px;
+	margin-block-start: 13px;
+	page-break-before: always; /* 在元素之前进行分页 */
   }
   .page-break:last-child {
- page-break-after: always; /* 在元素之后进行分页 */
+	page-break-after: always; /* 在元素之后进行分页 */
   }
 }
-		</style>
+	</style>
 	</head>
 	<body>
 	<h3>音标</h3>
@@ -7574,4 +7611,5 @@
 		<b>wing	翅膀；翼	[wɪŋ]</b>
 		<p>--- The bird flew away with its wings spread wide.</p>
 	</body>
+		<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
 </html>

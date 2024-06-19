@@ -6,22 +6,46 @@
 @media print {
 	@page {
 		size: B5;
-		margin: 10mm;
-		@top-left {
-				content:"初中英语全册";
+		margin: 6mm;
+	}
+	@page:left {
+		@top-left {content:"初中英语全册";}
+		@top-right {content:"2024/5";}
+		@bottom-left {
+				content: "Page " counter(page);
 			}
+		@bottom-right {
+				 content:"微信公众号：EnglishLeaner";
+			}
+		}
+	@page:right {
+		@top-left {content:"2024/5";}
+		@top-right {content:"初中英语全册";}
 		@bottom-left {
 				content:"微信公众号：EnglishLeaner";
 			}
 		@bottom-right {
 				 content: "Page " counter(page);
 			}
-	}
+		}
   body {
 	-webkit-print-color-adjust: exact;
   }
+  p{
+  	  margin-block-end: 10px;
+	  margin-block-start: 10px;
+  }
+  .pagedjs_margin-top, .pagedjs_margin-bottom {
+	font-size: 3mm;
+  }
+  h4{
+    margin-block-end: 13px;
+	margin-block-start: 13px;
+  }
   h3 {
 	display: block;
+  	margin-block-end: 13px;
+	margin-block-start: 13px;
 	page-break-before: always; /* 在元素之前进行分页 */
   }
   .page-break:last-child {
@@ -31,12 +55,6 @@
 	</style>
 	</head>
 	<body>
-	<h3>音标</h3>
-	<h3></h3>
-	<h3>自然拼读</h3>
-	<h3></h3>
-		<h3>Other one</h3>
-			<h3>Other two</h3>
 		<h3>六年级-上</h3>
 		<h4>Unit 1</h4>
 		<b>good	adj.好的	[gʊd]</b>
@@ -58,6 +76,508 @@
 		<b>Good afternoon !	下午好！	 
 		</b>
 		<p>--- Good afternoon, teacher.
+		</p>
+		<b>evening	n.晚上;黄昏	['iːvnɪŋ]<br/>
+		</b>
+		<b>Good evening !	晚上好！</b>
+		<p>--- Good evening, Mom. I'm home.
+		</p>
+		<b>how	adv.怎样;如何	[haʊ]<br/>
+		</b>
+		<b>are	v.是	[ɑː]<br/>
+		</b>
+		<b>you	pron.你;你们	[juː]<br/>
+		</b>
+		<b>How are you ?	你好吗？</b>
+		<p>---How are you? - I am fine, thanks. And you?
+		</p>
+		<b>I	pron.我	[aɪ]<br/>
+		</b>
+		<b>am	v.是	[æm]</b>
+		<p>--- I am very happy to be here.
+		</p>
+		<b>fine	adj.健康的;美好的	[faɪn]</b>
+		<p>--- Fine, thanks. And how are you?
+		</p>
+		<b>thanks	int.＆n.感谢;谢谢	[θæŋks]</b>
+		<p>--- Thanks for the help, I really appreciate it.
+		</p>
+		<b>OK	int.＆adv.好;可以	[əʊ'keɪ]</b>
+		<p>--- OK, let's go to the park.
+		</p>
+		<b>HB (铅笔芯)硬黑[ˌeɪtʃ'biː]</b>
+		<p>--- I prefer using an HB pencil.	</p>
+		<b>CD	光盘;激光唱片	[ˌsiː'diː]</b>
+		<p>--- This CD has my favorite songs.
+		</p>
+		<b>NBA	(美国)全国篮球协会[ˌen biː'eɪ]</b>
+		<p>--- I love watching NBA basketball games.
+		</p>
+		<b>kg=kilogram	千克;公斤['kɪləɡræm]</b>
+		<p>--- This apple weighs 1 kg.
+		</p>
+		<b>P＝parking	停车场;停车位</b>
+		<p>--- Please park your car in the P area.
+		</p>
+		<b>S	(尤指服装的尺码)小号的</b>
+		<p>--- This shirt is size S.
+		</p>
+		<b>M	(尤指服装的尺码)中号的</b>
+		<p>--- I usually order size M for shirts.
+		</p>
+		<b>L	(尤指服装的尺码)大号的</b>
+		<p>--- My brother wears size L pants.
+		</p>
+		<b>UFO	不明飞行物	[ˌjuː ef 'əʊ]</b>
+		<p>--- I always wanted to see a UFO, but I never did.
+		</p>
+		<b>CCTV	中国中央电视台	[ˌsiː siː tiː 'viː]</b>
+		<p>--- I often watch news on CCTV.
+		</p>
+		<h4>Unit 2</h4>
+		<b>what	pron.adj.什么	[wɒt]</b>
+		<br/>
+		<b>is	v.是	[ɪz]</b>
+		<br/>
+		<b>this	pron.这;这个	[ðɪs]</b>
+		<br/>
+		<b>in	prep.(表示使用语言、材料等)用;以	[ɪn]</b>
+		<br/>
+		<b>English	n.＆adj.英语;英格兰的;英语的	['ɪŋglɪʃ]</b>
+		<br/>
+		<b>in English	用英语	[ɪn'ɪŋglɪʃ]</b>
+		<br/>
+		<p>---What is this in English? - This is a pen in English.
+		</p>
+		<b>that	pron.那;那个	[ðæt]</b>
+		<p>--- That book on the shelf looks interesting.
+		</p>
+		<b>map	n.地图	[mæp]</b>
+		<p>--- I need a map to find my way around the city.
+		</p>
+		<b>cup	n.杯子	[kʌp]</b>
+		<p>--- Please pass me the cup. I want to drink some water.
+		</p>
+		<b>ruler	n尺;直尺	['ruːlə]</b>
+		<p>--- I need a ruler to measure this line.
+		</p>
+		<b>pen	n.笔;钢笔	[pen]</b>
+		<p>--- I lost my pen. Can you lend me one?
+		</p>
+		<b>orange	n. 橘子	['ɔːrɪndʒ]</b>
+		<p>--- I like oranges because they are sweet.
+		</p>
+		<b>jacket	n.夹克衫;短上衣	['dʒækɪt]</b>
+		<p>--- It's cold outside, so I need to wear a jacket.
+		</p>
+		<b>key	n.钥匙	[kiː]</b>
+		<p>--- I lost my house key. I can't get in.
+		</p>
+		<b>dog	n.狗	[dɒg]</b>
+		<p>--- I have a dog named Max. He's very cute.
+		</p>
+		<b>quilt	n.被子;床罩	[kwɪlt]</b>
+		<p>--- I use a quilt to keep me warm at night.
+		</p>
+		<b>it	pron.它	[ɪt]</b>
+		<p>--- It's a nice day today.
+		</p>
+		<b>a	art.(用于单数可数名词前，表示未曾提到的)一(人、事、物)	[eɪ;ə](an [æn])</b>
+		<p>--- A kite is flying high in the sky.
+		</p>
+		<b>kite	n.风筝	[kaɪt]</b>
+		<p>--- I want to buy a kite for my brother.
+		</p>
+		<b>cake	n.蛋糕	[keɪk]</b>
+		<p>--- I like eating chocolate cake.
+		</p>
+		<b>bike	n.自行车	[baɪk]</b>
+		<p>--- I ride my bike to school every day.
+		</p>
+		<b>computer	n.计算机;电脑	[kəm'pjuːtə(r)]</b>
+		<p>--- I use a computer to do my homework.
+		</p>
+		<b>spell	v.用字母拼;拼写	[spel]</b>
+		<p>--- Can you spell the word "difficult" for me?
+		</p>
+		<b>please.	int.(用于客气地请求或吩咐)请	 [pli:z]</b>
+		<p>--- Please sit down.
+		</p>
+		<h4>Unit 3</h4>
+		<b>color (=colour)	n.颜色	 ['kʌlə(r)]</b>
+		<p>--- My favorite color is blue.
+		</p>
+		<b>red	adj.＆n.红色(的)	[red]</b>
+		<p>--- The apple is red.
+		</p>
+		<b>yellow	adj.＆n.黄色(的)	['jeləʊ]</b>
+		<p>--- The sun is yellow.
+		</p>
+		<b>green	adj.＆n.绿色(的)	[griːn]</b>
+		<p>--- The grass is green.
+		</p>
+		<b>blue	adj.＆n.蓝色(的)	[bluː]</b>
+		<p>--- The sky is blue.
+		</p>
+		<b>black	adj.＆n.黑色(的)	[blæk]</b>
+		<p>--- My shoes are black.
+		</p>
+		<b>white	adj.＆n.白色(的)	[waɪt]</b>
+		<p>--- Snow is white.
+		</p>
+		<b>purple	adj.＆n.紫色(的)	['pɜːpl]</b>
+		<p>--- My favorite flower is purple.
+		</p>
+		<b>brown	adj.＆n.棕色(的);褐色(的)	[braʊn]</b>
+		<p>--- The bear is brown.
+		</p>
+		<b>and	conj.和;又;而	[ənd ,ænd]</b>
+		<p>--- I like apples and oranges.
+		</p>
+		<b>the	art.指已提到或易领会到的人或事物	[ðə]</b>
+		<p>--- The cat is sleeping on the sofa.
+		</p>
+		<h4>Unit 4</h4>
+		<b>my	pron.我的	[maɪ]</b>
+		<br/>
+		<b>name	n.名字;名称	[neɪm]</b>
+		<p>--- My name is John.
+		</p>
+		<b>nice	adj.令人愉快的;宜人的	[naɪs]</b>
+		<br/>
+		<b>to	常用于原形动词之前，表示该动词为不定式	[tuː]</b>
+		<br/>
+		<b>meet	v.遇见;相逢	[miːt]</b>
+		<p>--- Nice to meet you too, Lisa.</p>
+		<b>too	adv.也;又;太	[tuː]</b>
+		<p>--- It's too hot today.
+		</p>
+		<b>your	pron.你的;你们的	[jɔː(r)]</b>
+		<p>--- Your book is on the table.
+		</p>
+		<b>Ms.	(用于女子的姓氏或姓名前，不指明婚否)女士	[mɪz]</b>
+		<p>--- Hello, Ms. Johnson.
+		</p>
+		<b>his	pron.他的	[hɪz]</b>
+		<p>--- That is his book.
+		</p>
+		<b>her	pron.她的	[hɜː]</b>
+		<p>--- She gave me her pencil.
+		</p>
+		<b>yes	int.是的;可以	[jes]</b>
+		<p>--- Yes, I can help you.
+		</p>
+		<b>she	pron.她	[ʃiː]</b>
+		<p>--- She is my best friend.
+		</p>
+		<b>he	pron.他	[hiː]</b>
+		<p>--- He plays basketball very well.
+		</p>
+		<b>no	int.不;没有;不是	[nəʊ]</b>
+		<p>--- No, I don't like spicy food.
+		</p>
+		<b>not	adv.不;没有	[nɒt]</b>
+		<p>--- I'm not hungry right now.
+		</p>
+		<b>zero	num.零	['zɪərəʊ]</b>
+		<p>--- The temperature is zero degrees today.
+		</p>
+		<b>one	num.一	[wʌn]</b>
+		<p>--- I have one apple.
+		</p>
+		<b>two	num.二	[tuː]</b>
+		<p>--- There are two cats in the house.
+		</p>
+		<b>three	num.三	[θriː]</b>
+		<p>--- I need three pencils for my homework.
+		</p>
+		<b>four	num.四	[fɔː]</b>
+		<p>--- Four is my lucky number.
+		</p>
+		<b>five	num.五	[faɪv]</b>
+		<p>--- I have five fingers on each hand.
+		</p>
+		<b>six	num.六	[sɪks]</b>
+		<p>--- Six o'clock is dinner time.
+		</p>
+		<b>seven	num. 七	['sevn]</b>
+		<p>--- There are seven days in a week.
+		</p>
+		<b>eight	num.八	[eɪt]</b>
+		<p>--- Eight is the number after seven.
+		</p>
+		<b>nine	num九	[naɪn]</b>
+		<p>--- Nine times out of ten, I'm right.
+		</p>
+		<b>telephone	n. 电话;电话机	['telɪfəʊn]</b>
+		<br/>
+		<b>number	n.号码;数字	['nʌmbə]</b>
+		<p>--- What's your telephone number?
+		</p>
+		<b>phone	n.电话;电话机	[fəʊn]</b>
+		<br/>
+		<b>telephone number	/phone number	电话号码</b>
+		<p>--- I need to use the phone to call my mom.</p>
+		<b>first	adj.第一	[fɜːst]</b>
+		<p>--- My first name is Tom.
+		</p>
+		<b>first name	名字</b>
+		<p>--- My first name is Emily.
+		</p>
+		<b>last	adj.最后的;末尾的	[lɑːst]</b>
+		<p>--- My last name is Smith.
+		</p>
+		<b>last name	姓</b>
+		<p>--- What's your last name?
+		</p>
+		<b>friend	n.朋友	[frend]</b>
+		<p>--- I have a lot of friends in school.
+		</p>
+		<b>China	中国	['tʃaɪnə]</b>
+		<p>--- I love visiting China.
+		</p>
+		<b>middle	adj.＆n.中间的;中间	['mɪdl]</b>
+		<br/>
+		<b>school	n.学校	[skuːl]</b>
+		<br/>
+		<b>middle school	中学;初中</b>
+		<br/>
+		<p>--- I go to a middle school.</p>
+		<h4>Unit 5</h4>
+		<b>sister	n.姐;妹	['sɪstə]</b>
+		<p>--- My sister is two years older than me.
+		</p>
+		<b>mother	adj.母亲;妈妈	['mʌðə]</b>
+		<p>--- My mother cooks delicious food for us to eat every day.
+		</p>
+		<b>father	n.父亲;爸爸	['fɑːðə]</b>
+		<p>--- My father is a doctor.
+		</p>
+		<b>parent	n.父(母)亲	['peərənt]</b>
+		<p>--- My parents are very kind.
+		</p>
+		<b>brother	n.兄;弟	['brʌðə]</b>
+		<p>--- My brother is older than me.
+		</p>
+		<b>grandmother	n.(外)祖母;奶奶;外婆;姥姥	['ɡrænmʌðə(r)]</b>
+		<p>--- My grandmother loves to cook.
+		</p>
+		<b>grandfather	n.(外)祖父;爷爷;外公;姥爷	['ɡrænfɑːðə(r)]</b>
+		<p>--- My grandfather tells me interesting stories.
+		</p>
+		<b>grandparent	n.祖父(母);外祖父(母)	['ɡrænpeərənt]</b>
+		<p>--- My grandparents live in the countryside.
+		</p>
+		<b>family	n.家;家庭	['fæməli]</b>
+		<p>--- I have a happy family.
+		</p>
+		<b>those	pron.那些	[ðəʊz]</b>
+		<p>--- Those are my books.
+		</p>
+		<b>who	pron.谁;什么人	[huː]</b>
+		<p>--- Who is that girl?
+		</p>
+		<b>oh	int.哦;啊	[əʊ]</b>
+		<p>--- Oh, I forgot my umbrella!
+		</p>
+		<b>these	pron.这些	[ðiːz]</b>
+		<p>--- These apples are delicious.
+		</p>
+		<b>they	pron.,他(她、它)们	[ðeɪ]</b>
+		<p>--- They are playing football.
+		</p>
+		<b>well	int.嗯;好吧	[wel]</b>
+		<p>--- I am feeling well today.
+		</p>
+		<b>have	v.经受;经历	[hæv]</b>
+		<p>--- I have a new pencil.
+		</p>
+		<b>day	n.一天;一日;白天	[deɪ]</b>
+		<br/>
+		<b>Have a good day !	(表示祝愿)过得愉快！</b>
+		<p>--- What did you do yesterday?
+		</p>
+		<b>bye (=goodbye)	int.再见[baɪ]</b>
+		<p>--- Bye, see you tomorrow!
+		</p>
+		<b>son	n.儿子	[sʌn]</b>
+		<p>--- He is my son.
+		</p>
+		<b>cousin	n.堂(表)兄(弟、姐、妹)	['kʌzn]</b>
+		<p>--- My cousin lives in Shanghai.
+		</p>
+		<b>grandpa	n.(外)祖父;爷爷;外公;姥爷	['ɡrænpɑː]</b>
+		<p>--- My grandpa often takes me to the park.
+		</p>
+		<b>mom (=mum)	n.妈妈[mɒm],[mɑːm]</b>
+		<p>--- Mom, where is my homework?
+		</p>
+		<b>aunt	n.姑母;姨母;伯母;婶母;舅母	[ɑːnt]</b>
+		<p>--- My aunt is very beautiful.
+		</p>
+		<b>grandma	n.(外)祖母;奶奶;外婆;姥姥	['ɡrænmɑː]</b>
+		<p>--- My grandma is cooking dinner.
+		</p>
+		<b>dad	n.爸爸	[dæd]</b>
+		<p>--- Dad, can I watch TV?
+		</p>
+		<b>uncle	n.舅父;叔父;伯父;姑父;姨父	['ʌŋkl]</b>
+		<p>--- My uncle is a teacher.
+		</p>
+		<b>daughter	n.女儿	['dɔːtə]</b>
+		<p>--- She is my daughter.
+		</p>
+		<b>here	adv.这就是;在这里	[hɪə]</b>
+		<p>--- Here is your book.
+		</p>
+		<b>photo	n.照片	['fəʊtəʊ]</b>
+		<p>--- I like taking photos.
+		</p>
+		<b>of	prep.属于(某人或某物);关于(某人或某物)	[ɒv , əv]</b>
+		<p>--- This is a photo of my family.
+		</p>
+		<b>next	adj.＆n.下一个(的);接下来(的)	[nekst]</b>
+		<p>--- Next week, we will have a test.
+		</p>
+		<b>picture	n.照片; 图画	['pɪktʃə]</b>
+		<p>--- Look at this picture, it's beautiful.
+		</p>
+		<b>girl	n.女孩	[gɜːl]</b>
+		<p>--- The girl in red is my friend.
+		</p>
+		<h4>Unit 6</h4>
+		<b>pencil	n.铅笔	['pensl]</b>
+		<p>--- I need a new pencil.
+		</p>
+		<b>book	n.书	[bʊk]</b>
+		<p>--- I like to read books.
+		</p>
+		<b>eraser	n.橡皮	[ɪ'reɪzə(r)],[ɪ'reɪsər]</b>
+		<p>--- Can I borrow your eraser?
+		</p>
+		<b>box	n.箱;盒	[bɒks]</b>
+		<p>--- Put the books in the box.
+		</p>
+		<b>pencil box	铅笔盒;文具盒</b>
+		<p>--- My pencil box is blue.
+		</p>
+		<b>schoolbag	n.书包	['skuːlˌbæg]</b>
+		<p>--- Don't forget your schoolbag.
+		</p>
+		<b>dictionary	n.词典;字典	['dɪkʃənri],['dɪkʃəneri]</b>
+		<p>--- I need to look up a word in the dictionary.
+		</p>
+		<b>his	他的	[hɪz]</b>
+		<p>--- This is his book.
+		</p>
+		<b>mine	pron.我的	[maɪn]</b>
+		<p>--- That pencil is mine.
+		</p>
+		<b>hers	pron.她的	[hɜːz]</b>
+		<p>--- The dress is hers.
+		</p>
+		<b>excuse	v.原谅;宽恕	[ɪk'skjuːs , ɪk'skjuːz]</b>
+		<br/>
+		<b>me	pron.(I的宾格)我	[miː]</b>
+		<br/>
+		<b>excuse me.	劳驾;请原谅</b>
+		<p>--- Excuse me, where is the library?
+		</p>
+		<b>thank	v.感谢;谢谢	[θæŋk]</b>
+		<p>--- Thank you for helping me.
+		</p>
+		<b>teacher	n.老师;教师	['tiːtʃə]</b>
+		<p>--- My teacher is very strict.
+		</p>
+		<b>about	prep.关于	[ə'baʊt]</b>
+		<p>--- What about going for a walk?
+		</p>
+		<b>What about…?	(询问消息或提出建议)……怎么样？……好吗？</b>
+		<p>--- What about watching a movie?
+		</p>
+		<b>yours	pron.你的;你们的	[jʊəz]</b>
+		<p>--- Is this yours?
+		</p>
+		<b>for	prep.为了;给;对	[fɔː]</b>
+		<p>--- I bought a gift for you.
+		</p>
+		<b>thank you for…	为……而感谢</b>
+		<p>--- Thank you for your help.
+		</p>
+		<b>help	v.＆n.帮助;援助	[help]</b>
+		<p>--- Can you help me with my homework?
+		</p>
+		<b>welcome	adj.受欢迎的	['welkəm]</b>
+		<p>--- You're welcome to my house.
+		</p>
+		<b>You're welcome.	别客气。</b>
+		<p>--- You're welcome, anytime.
+		</p>
+		<b>baseball	n.棒球	['beɪsˌbɔːl]</b>
+		<p>--- I like to play baseball.
+		</p>
+		<b>watch	n.表;手表	[wɒtʃ]</b>
+		<p>--- I like to watch TV.
+		</p>
+		<b>game	n.游戏;运动;比赛	[geɪm]</b>
+		<p>--- Let's play a game!
+		</p>
+		<b>card	n.卡片	[kɑːd]</b>
+		<p>--- I need a birthday card.
+		</p>
+		<b>ID card	学生证;身份证</b>
+		<p>--- Please show me your ID card.
+		</p>
+		<b>notebook	n.笔记本	['nəʊtbʊk]</b>
+		<p>--- I write my notes in my notebook.
+		</p>
+		<b>ring	n.戒指	[rɪŋ]</b>
+		<p>--- I lost my ring.
+		</p>
+		<b>bag	n.袋;包	[bæg]</b>
+		<p>--- My bag is black.
+		</p>
+		<b>in	prep.在……里	[ɪn]</b>
+		<p>--- The book is in the desk.
+		</p>
+		<b>library	n.图书馆	['laɪbrəri]</b>
+		<p>--- The library is very quiet.
+		</p>
+		<b>ask	v.请求;要求;询问	[ɑːsk]</b>
+		<p>--- Can I ask you a question?
+		</p>
+		<b>ask…for…	请求;恳求(给予)</b>
+		<p>--- Can I ask for a glass of water?
+		</p>
+		<b>find	v.(过去式、过去分词found [faʊnd])找到;发现	[faɪnd]</b>
+		<p>--- I can't find my keys.
+		</p>
+		<b>some	adj.pron.一些;某些;有些;有的	[sʌm]</b>
+		<p>--- Can I have some water?
+		</p>
+		<b>classroom	n.教室	['klɑːsruːm]</b>
+		<p>--- Our classroom is on the second floor.
+		</p>
+		<b>e-mail (=email)	n.电子邮件['iːmeɪl]</b>
+		<p>--- Please send me an e-mail.
+		</p>
+		<b>at	prep.(提供电话号码等时使用)按照;根据;在(某处、某时间或时刻)	[æt]</b>
+		<p>--- I will meet you at the park.
+		</p>
+		<b>call	v.(给……)打电话	[kɔːl]</b>
+		<p>--- Can I call you later?
+		</p>
+		<b>lost	v.(动词lose的过去式-[luːz])遗失;丢失	[lɒst]</b>
+		<p>--- I lost my keys.
+		</p>
+		<b>must	modal v.必须	[mʌst]</b>
+		<p>--- You must finish your homework.
+		</p>
+		<b>set	n.一套;一副;一组	[set]</b>
+		<p>--- I have a set of keys.
+		</p>
+		<b>a set of	一套;一副;一组</b>
+		<p>--- She has a set of beautiful earrings.
 		</p>
 	</body>
 	<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
