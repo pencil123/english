@@ -3,13 +3,16 @@
 	<head>
 		<title>音标-语法-单词(4-6 2018Plan)</title>
 		<style>
+	h3 {
+		string-set: title content(text)
+	}
 @media print {
 	@page {
 		size: B5;
 		margin: 6mm;
 	}
 	@page:left {
-		@top-left {content:"初中英语全册";}
+		@top-left {content:string(title);}
 		@top-right {content:"2024/5";}
 		@bottom-left {
 				content: "Page " counter(page);
@@ -20,7 +23,7 @@
 		}
 	@page:right {
 		@top-left {content:"2024/5";}
-		@top-right {content:"初中英语全册";}
+		@top-right {content:string(title);}
 		@bottom-left {
 				content:"微信公众号：EnglishLeaner";
 			}
