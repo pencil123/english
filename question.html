@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>Question</title>
+		<style>
+	h3 {
+		string-set: title content(text)
+	}
+@media print {
+	@page {
+		size: B5;
+		margin: 6mm;
+	}
+	@page:left {
+		margin-right: 15mm;
+		@top-left {content:string(title);}
+		@top-right {content:"2024/5";}
+		@bottom-left {
+				content: "Page " counter(page);
+			}
+		@bottom-right {
+				 content:"微信公众号：EnglishLeaner";
+			}
+		}
+	@page:right {
+		margin-left:15mm;
+		@top-left {content:"2024/5";}
+		@top-right {content:string(title);}
+		@bottom-left {
+				content:"微信公众号：EnglishLeaner";
+			}
+		@bottom-right {
+				 content: "Page " counter(page);
+			}
+		}
+  body {
+	-webkit-print-color-adjust: exact;
+  }
+  p{
+  	  margin-block-end: 10px;
+	  margin-block-start: 10px;
+  }
+  .pagedjs_margin-top, .pagedjs_margin-bottom {
+	font-size: 3mm;
+  }
+  h4{
+    margin-block-end: 13px;
+	margin-block-start: 13px;
+  }
+  h3 {
+	display: block;
+  	margin-block-end: 13px;
+	margin-block-start: 13px;
+	page-break-before: always; /* 在元素之前进行分页 */
+  }
+  .page-break:last-child {
+	page-break-after: always; /* 在元素之后进行分页 */
+  }
+}
+	</style>
+	</head>
+	<body>
+		<h3>英语单词中的辅音字母双写的情况</h3>
+		<p>英语单词中有些辅音字母要双写，这主要是基于英语拼写规则和发音规律的考虑。以下是对此现象的详细解释：</p>
+<h4>一、保持发音不变</h4>
+<p>英语是拼音文字，辅音字母双写的核心原因是为了保持单词在添加词尾或词缀后的原有发音不变。</p>
+<p>具体来说，当一个以重读闭音节结尾、且词尾只有一个辅音字母的单词需要添加以元音字母开始的词尾或后缀时（如-ing、-ed、-er等），为了保持该辅音字母的发音不发生变化，需要双写该辅音字母。</p>
+<h4>二、音节划分的需要</h4>
+<p>在双音节或多音节单词中，辅音字母的双写也与音节的划分有关。</p>
+<p>重读闭音节只有一个辅音字母结尾的时候，加上一个新的音节，如果不双写结尾的辅音字母，音节划分必将发生变化，从而可能导致整个单词的读音发生改变。因此，为了保持单词的读音稳定性和音节划分的准确性，需要双写结尾的辅音字母。</p>
+<h4>三、具体例子</h4>
+<ol>
+<li>
+动词词形变化：如规则变化的动词在变为过去式、过去分词加-ed或现在分词加-ing时，若单词以重读闭音节结尾且词尾只有一个辅音字母，则需双写该辅音字母。例如，fit—fitted—fitting。</li>
+<li>形容词或副词的比较级和最高级：当形容词或副词后面加-er、-est构成比较级和最高级时，若单词符合上述条件，也需双写辅音字母。例如，fat—fatter—fattest。</li>
+<li>派生词的形成：一些名词、动词、形容词等加上-er、-en、-able、-ish等以元音字母开始的后缀构成新词时，若原单词符合重读闭音节且词尾只有一个辅音字母的条件，则需双写辅音字母。例如，shop（v.购物）—shopper（n.购物者）。</li>
+</ol>
+<h4>四、需要双写的辅音字母</h4>
+<p>在现代英语中，并不是所有的辅音字母都需要双写。</p>
+在26个英文字母中，辅音字母占了20个（不含字母y），但通常只有b、d、g、l等辅音字母在特定条件下需要双写。例如，rob—robbed—robbing、red—redden—reddish等。</p>
+<p>综上所述，英语单词中辅音字母的双写现象是为了保持单词的发音不变和音节划分的准确性而存在的。这一现象符合英语拼写规则和发音规律的要求，并在实际使用中得到了广泛的应用。</p>	
+	</body>
+	<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>不发音的情况</title>
+		<style>
+	h3 {
+		string-set: title content(text)
+	}
+@media print {
+	@page {
+		size: B5;
+		margin: 6mm;
+	}
+	@page:left {
+		margin-right: 15mm;
+		@top-left {content:string(title);}
+		@top-right {content:"2024/5";}
+		@bottom-left {
+				content: "Page " counter(page);
+			}
+		@bottom-right {
+				 content:"微信公众号：EnglishLeaner";
+			}
+		}
+	@page:right {
+		margin-left:15mm;
+		@top-left {content:"2024/5";}
+		@top-right {content:string(title);}
+		@bottom-left {
+				content:"微信公众号：EnglishLeaner";
+			}
+		@bottom-right {
+				 content: "Page " counter(page);
+			}
+		}
+  body {
+	-webkit-print-color-adjust: exact;
+  }
+  p{
+  	  margin-block-end: 10px;
+	  margin-block-start: 10px;
+  }
+  .pagedjs_margin-top, .pagedjs_margin-bottom {
+	font-size: 3mm;
+  }
+  h4{
+    margin-block-end: 13px;
+	margin-block-start: 13px;
+  }
+  h3 {
+	display: block;
+  	margin-block-end: 13px;
+	margin-block-start: 13px;
+	page-break-before: always; /* 在元素之前进行分页 */
+  }
+  .page-break:last-child {
+	page-break-after: always; /* 在元素之后进行分页 */
+  }
+}
+	</style>
+	</head>
+	<body>
+		<h3>单词中英语字母不发音的情况</h3>
+<p>英语单词中字母不发音的情况相当复杂且多样，这主要是由于英语的历史发展、语言变化以及从其他语言中借用单词等多种因素造成的。以下是一些常见的字母不发音情况的汇总：</p>
+<h4>一、词尾字母不发音</h4>
+<ul>
+<li>字母e：在许多单词的词尾，字母e通常不发音，如“love”，“behave”，“native”等。这种用法通常用于表示单词中的元音字母发长音。</li>
+<li>字母gh：在词尾或在字母t之前，gh组合通常不发音，如“brought”，“caught”，“fought”，“height”，“high”，“straight”等。但在某些单词中，gh可能发[f]音，如“laugh”，“draught”，或在“dinghy”中发[g]音。</li>
+</ul>
+<h4>二、词首或词中特定组合不发音</h4>
+<ul>
+<li>h+元音：在以“h+元音”开头的部分词中，h不发音，如“honor”，“honest”，“heir”等。
+</li> <li>wh在o前：在单词中，当wh组合在元音字母o之前时，w不发音，如“wholly”，“whose”，“wholesale”。在其他情况下，wh的发音取决于具体的语言环境，如在英式英语中h可能不发音，而在美式英语中可能发音为[hw]，如“white”，“whip”。
+</li><li>gn, kn, mn, pn：在以这些字母组合开头的词中，通常只有n发音，如“gnu”，“gnome”，“kneel”，“knit”，“mnemonic”，“pneumonia”。
+</li><li>wr：在以wr开头的词中，w不发音，如“wraith”，“wreath”，“wrap”。
+</li><li>sc在e, i, y前：当sc出现在e, i, y之前时，c不发音，如“scene”，“science”，“scythe”。
+</li><li>dg, dj：在dg和dj组合中，d通常不发音，如“judge”，“adjourn”。
+</li><li>tch：在tch组合中，t不发音，如“pitch”，“hotchpotch”。
+</li><li>exh, rh：在以exh和rh开头的词中，h不发音，如“exhaust”，“exhilarate”，“exhibit”，“rheumatism”，“rhinoceros”，“rhyme”。
+</li><li>bt：在bt组合中，有时b不发音，如“debt”，“doubt”，“subtle”。
+</li><li>al在辅音前：在辅音前的al组合中，l有时不发音，如“talk”，“walk”，“fall”。
+</li><li>ps：在以ps开头的词中，p不发音，如“psychology”，“psychiatrist”，“psalm”。
+</li><li>ck, cq：在ck和cq组合中，c不发音，如“lack”，“quick”，“acquaintance”。
+</li><li>st：在st组合中，有时t不发音，如“listen”，“whistle”，“bristle”。
+</li>
+</ul>
+<h4>三、其他情况</h4>
+<ul>
+<li>mb结尾：在mb结尾的词中，b不发音，只发/m/，如“climb”，“lamb”，“bomb”。
+</li><li>n在m后：在词尾且紧跟在m后的n不发音，如“autumn”，“column”，“hymn”。
+</li><li>t在s和l之间：当t出现在s和l之间时，t不发音，如“wrestle”，“whistle”，“castle”。
+</li><li>s在i和l之间：在i和l之间的s有时不发音，如“island”，“isle”，“aisle”。
+</li>
+</ul>
+<h4>结论</h4>
+<p>
+英语单词中字母不发音的情况多种多样，这些规则往往需要通过大量的实践和积累来掌握。了解这些规则不仅可以帮助我们更准确地发音，还可以提高我们的单词拼写和记忆能力。同时，也需要注意到英语语言的复杂性和多样性，有些规则可能并不适用于所有情况。因此，在学习和使用英语时，我们需要保持开放和灵活的态度，不断积累和总结经验。</p>
+	</body>
+	<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+</html>
