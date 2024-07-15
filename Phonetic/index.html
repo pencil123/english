@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>目录</title>
+		<style>
+	h3 {
+		string-set: title content(text)
+	}
+@media print {
+	@page {
+		size: B5;
+		margin: 6mm;
+	}
+	@page:left {
+		margin-right: 15mm;
+		@top-left {content:string(title);}
+		@top-right {content:"2024/5";}
+		@bottom-left {
+				content: "Page " counter(page);
+			}
+		@bottom-right {
+				 content:"微信公众号：EnglishLeaner";
+			}
+		}
+	@page:right {
+		margin-left:15mm;
+		@top-left {content:"2024/5";}
+		@top-right {content:string(title);}
+		@bottom-left {
+				content:"微信公众号：EnglishLeaner";
+			}
+		@bottom-right {
+				 content: "Page " counter(page);
+			}
+		}
+  body {
+	-webkit-print-color-adjust: exact;
+  }
+  p{
+  	  margin-block-end: 10px;
+	  margin-block-start: 10px;
+  }
+  .pagedjs_margin-top, .pagedjs_margin-bottom {
+	font-size: 3mm;
+  }
+  h4{
+    margin-block-end: 13px;
+	margin-block-start: 13px;
+  }
+  h3 {
+	display: block;
+  	margin-block-end: 13px;
+	margin-block-start: 13px;
+	page-break-before: always; /* 在元素之前进行分页 */
+  }
+  .page-break:last-child {
+	page-break-after: always; /* 在元素之后进行分页 */
+  }
+}
+	</style>
+	</head>
+	<body>
+		<h3 style="display:none">目录</h3>
+		<div id="index">
+		<ol>
+<li>关于英语的一些基本信息
+<ul>
+<li>英语的发展史简述</li>
+<li>英语和中文的比较</li>
+<li>英语单词中的辅音字母双写的情况</li>
+</ul>
+</li><li>音素基本知识
+<ul>
+<li>什么是音素</li>
+<li>什么是音标</li>
+<li>什么是国际音标</li>
+<li>什么是DJ音标</li>
+<li>什么是KK音标</li>
+<li>DJ音标-20个元音音素</li>
+<li>DJ音标-28个辅音音素</li>
+</ul>
+</li><li>音素和音素组合时的拼读
+</li><li>音节知识学习
+<ul>
+<li>什么是音节</li>
+<li>音节划分方法详解</li>
+<li>成音节介绍</li>
+<li>辅音字母组合</li>
+<li>元音字母组合</li>
+</ul>
+</li><li>学习自然拼读
+<ul>
+<li>单个辅音字母的常见发音</li>
+<li>辅音字母组合的常见发音</li>
+<li>单个元音字母的常见发音</li>
+<li>元音字母组合的常见发音</li>
+<li>自然拼读发音补充</li>
+</ul>
+</li><li>重音和轻音体会
+<ul>
+<li>第一个音节重音</li>
+<li>第一个音节非重音</li>
+</ul>
+</li><li>学习词根和词缀</li>
+		</ol>
+		
+		
+		</div>
+	
+	</body>
+	<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+</html>

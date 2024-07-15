@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 	<head>
-		<title>音素拼读</title>
+		<title>辅音音素+元音音素拼读</title>
 		<style>
 	h3 {
-		width: 100%;
 		string-set: title content(text)
 	}
 	.team{
@@ -12,6 +11,10 @@
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
+	}
+	.team >	h4{
+			width: 100%;
+			page-break-before: always; /* 在元素之前进行分页 */
 		}
 	ul{
 		width: 50%;
@@ -50,7 +53,6 @@
 		}
   body {
 	-webkit-print-color-adjust: exact;
-	
   }
   p{
   	  margin-block-end: 10px;
@@ -60,6 +62,7 @@
 	font-size: 3mm;
   }
   h4{
+	width: 100%;
     margin-block-end: 13px;
 	margin-block-start: 13px;
   }
@@ -75,8 +78,9 @@
   }
   
   	.team{
-	-webkit-print-color-adjust: exact;
-
+		h4{
+			page-break-before: always; /* 在元素之前进行分页 */
+		}
 		}
 	ul{
 		width: 50%;
@@ -91,7 +95,8 @@
 	</head>
 	<body>
 		<div class="team">
-		<h3>/p/ /b/  爆破音 清浊对立</h3>
+		<h3 style="display:none">辅音音素+元音音素拼读</h3>
+		<h4>/p/ /b/  爆破音 清浊对立</h4>
 			<ul>
 				<li>piː_peel /piːl/ (剥)</li>
 				<li>pɪ _pin /pɪn/ (别针)</li>
@@ -136,7 +141,7 @@
 				<li>beə_bear /beər/ 熊</li>
 				<li>bʊə_bourgeoisie /ˌbʊəʒwɑːˈziː/资产阶级</li>
 			</ul>
-					<h3>/t/ /d/  爆破音 清浊对立</h3>
+					<h4>/t/ /d/  爆破音 清浊对立</h4>
 			<ul>
 				<li>tiː_tease /tiːz/ 取笑</li>
 				<li>tɪ _tip /tɪp/ 尖端</li>
@@ -181,7 +186,7 @@
 				<li>deə_dare /deə(r)/  敢;胆敢</li>
 				<li>dʊə_</li>
 			</ul>
-					<h3>/k/ /g/  爆破音 清浊对立</h3>
+					<h4>/k/ /g/  爆破音 清浊对立</h4>
 			<ul>
 				<li>kiː_keep /kiːp/ 保持</li>
 				<li>kɪ _kiss /kɪs/ 吻</li>
@@ -226,7 +231,7 @@
 				<li>ɡeə_</li>
 				<li>ɡʊə_guerilla /ɡəˈrɪlə/ 游击队成员</li>
 			</ul>
-					<h3>/f/ /v/  摩擦音  清浊对立</h3>
+					<h4>/f/ /v/  摩擦音  清浊对立</h4>
 			<ul>
 				<li>fiː_fee /fiː/ 费用</li>
 				<li>fɪ _fin /fɪn/ 鳍</li>
@@ -271,7 +276,7 @@
 				<li>veə_variant /ˈveəriənt/ 变种</li>
 				<li>vʊə_</li>
 			</ul>
-			<h3>/s/ /z/  摩擦音  清浊对立</h3>
+			<h4>/s/ /z/  摩擦音  清浊对立</h4>
 			<ul>
 				<li>siː_see /siː/ 看见</li>
 				<li>sɪ _sink /sɪŋk/ 下沉</li>
@@ -316,7 +321,7 @@
 				<li>zeə_</li>
 				<li>zʊə_</li>
 			</ul>
-			<h3>/θ/ /ð/  摩擦音  清浊对立</h3>
+			<h4>/θ/ /ð/  摩擦音  清浊对立</h4>
 			<ul>
 				<li>θiː_thesis /ˈθiːsɪs/ 论文</li>
 				<li>θɪ _thin /θɪn/ 薄的</li>
@@ -361,7 +366,7 @@
 				<li>ðeə_there /ðeə(r)/ 那里</li>
 				<li>ðʊə_</li>
 			</ul>
-			<h3>/ʃ/ /ʒ/  摩擦音  清浊对立</h3>
+			<h4>/ʃ/ /ʒ/  摩擦音  清浊对立</h4>
 			<ul>
 				<li>ʃiː_sheep /ʃiːp]/ 羊</li>
 				<li>ʃɪ _sheer /ʃɪə(r)/ 纯粹的  </li>
@@ -406,7 +411,7 @@
 				<li>ʒeə_</li>
 				<li>ʒʊə_</li>
 			</ul>
-			<h3>/h/ /r/  摩擦音  清浊对立</h3>
+			<h4>/h/ /r/  摩擦音  清浊对立</h4>
 			<ul>
 				<li>hiː_</li>
 				<li>hɪ _his /hɪz/ 他的</li>
@@ -451,7 +456,7 @@
 				<li>reə_</li>
 				<li>rʊə_</li>
 			</ul>
-			<h3>/tʃ/ /dʒ/  破擦音  清浊对立</h3>
+			<h4>/tʃ/ /dʒ/  破擦音  清浊对立</h4>
 			<ul>
 				<li>tʃiː_cheap /tʃiːp/ 便宜的</li>
 				<li>tʃɪ _chin /tʃɪn/ 下巴</li>
@@ -496,7 +501,7 @@
 				<li>dʒeə_</li>
 				<li>dʒʊə_adjured /əˈdʒʊəd/ 要求</li>
 			</ul>
-			<h3>/ts/ /dz/  破擦音  清浊对立</h3>
+			<h4>/ts/ /dz/  破擦音  清浊对立</h4>
 			<ul>
 				<li>tsiː</li>
 				<li>tsɪ </li>
@@ -541,7 +546,7 @@
 				<li>dzeə</li>
 				<li>dzʊə</li>
 			</ul>
-			<h3>/tr/ /dr/  破擦音  清浊对立</h3>
+			<h4>/tr/ /dr/  破擦音  清浊对立</h4>
 			<ul>
 				<li>triː_tree /triː/ 树</li>
 				<li>trɪ _try /traɪ/ 尝试</li>
@@ -586,7 +591,7 @@
 				<li>dreə_</li>
 				<li>drʊə_</li>
 			</ul>
-			<h3>/m/ /n/ /ŋ/  鼻音 浊辅音</h3>
+			<h4>/m/ /n/ /ŋ/  鼻音 浊辅音</h4>
 			<ul>
 				<li>miː_meat /miːt/ 肉</li>
 				<li>mɪ _timing /ˈtaɪmɪŋ/ 定时</li>
@@ -654,7 +659,7 @@
 				<li>ŋeə_</li>
 				<li>ŋʊə_</li>
 			</ul>
-			<h3>/l/  舌侧音 浊辅音</h3>
+			<h4>/l/  舌侧音 浊辅音</h4>
 			<ul>
 				<li>liː_leek /liːk/ 韭葱</li>
 				<li>lɪ _lilt /lɪlt/ 轻快地唱</li>
@@ -677,7 +682,7 @@
 				<li>leə_</li>
 				<li>lʊə_lure /lʊə(r)/ 诱饵</li>
 			</ul>
-			<h3>/j/ /w/ 半元音 浊辅音</h3>
+			<h4>/j/ /w/ 半元音 浊辅音</h4>
 			<ul>
 				<li>jiː_yeast  /jiːst/ 酵母</li>
 				<li>jɪ _</li>
