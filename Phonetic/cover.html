@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>Cover 封面</title>
+		<style>
+
+@media print {
+	@page {
+		size: B5;
+		margin: 6mm;
+		h1 {
+			text-align: center;
+			margin-top: 180px;
+			font-size: 61px;
+		}
+		span{
+			position:absolute;
+			bottom: 100px;
+			right: 50px;
+			font-size: 20px;
+			font-weight: 550;
+		}
+	}
+  body {
+	-webkit-print-color-adjust: exact;
+  }
+}
+	</style>
+	</head>
+	<body>
+		<h1>英语音标学习参考</h1>
+		<span>微信公众号:英语资料2028</span>
+	</body>
+	<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+</html>
